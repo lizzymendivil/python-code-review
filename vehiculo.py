@@ -53,12 +53,12 @@ class Vehiculo:
     else:
       return 8
 
-  def obtener_reporte(self):
+  def obtener_reporte():
     print('-------------------------------------------')
     print('REPORTE FINAL - EMISÓN DE DIÓXIDO DE CARBONO')
     print('-------------------------------------------')
     print('Estás usando un vehículo tipo {} marca {} modelo {} de color {} que tiene {} litros de combustible disponibles en su tanque.'.format(self.tipo, self.marca, self.modelo, self.color, round(self.litros_combustible_tanque,2)))
     print('Se recorrieron en total {} km de distancia'.format(self.kilometraje))
     print('Para la distancia recorrida se consumió un total de {} litros de combustible'format(self.litros_combustible_consumidos))
-    print('Se emitió a la atmosfera un total de {} kg de CO2 - Dioxido de carbono'.format(round(self.calcular_emision_dioxido_de_carbono,2)))
+    print('Se emitió a la atmosfera un total de {} kg de CO2 - Dioxido de carbono'.format(round(self.calcular_emision_dioxido_de_carbono,-2)))
   

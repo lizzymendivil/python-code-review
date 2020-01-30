@@ -1,5 +1,5 @@
 class Simulador:
-    def __init__(self, vehiculos):
+    def __init__(self):
         self.vehiculos = vehiculos
 
     def iniciar_simulacion(self, dias):
@@ -11,6 +11,6 @@ class Simulador:
                 print("----------------------")
                 print("Dia {}".format(dia))
                 print("----------------------")
-                litros = random.randint(1,100)
+                litros = random.rand(1,100)
                 v.recorrer_distancia()
             v.obtener_reporte()

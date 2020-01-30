@@ -1,5 +1,4 @@
-from vehiculo import Vehiculo
-from simulador import Simulador
+import vehiculo from Vehiculo
 
 motor1 = Motor('78pm4450a', 1000)
 motor2 = Motor('9uppkm098', 2000)
@@ -14,7 +13,7 @@ auto2.poner_motor(motor2)
 auto3 = Vehiculo('5996PKY', 'Nissan', 'Verde', '2018', 'Automovil', 'gasolina')
 auto3.poner_motor()
 
-lista_vehiculos = [auto1, auto2, auto3]
+lista_vehiculos = {auto1, auto2, auto3}
 
 simulador = Simulador()
 simulador.iniciar_simulacion()
